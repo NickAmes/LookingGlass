@@ -5,7 +5,8 @@ out highp vec4 color;
 
 uniform       int   nearest;
 uniform highp vec2  size;
-
+uniform       int  flipx;
+uniform       int  flipy;
 uniform       int   nv;
 uniform highp float nvGain;
 
