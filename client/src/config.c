@@ -157,7 +157,7 @@ static struct Option options[] =
     .description    = "Rotate the display 180 degrees",
     .shortopt       = 'R',
     .type           = OPTION_TYPE_BOOL,
-    .value.x_bool   = false,
+    .value.x_bool   = true,
   },
   {
     .module         = "win",
@@ -400,6 +400,7 @@ bool config_load(int argc, char * argv[])
   params.borderless    = option_get_bool  ("win", "borderless"   );
   params.fullscreen    = option_get_bool  ("win", "fullScreen"   );
   params.r180          = option_get_bool  ("win", "r180"        );
+
   params.maximize      = option_get_bool  ("win", "maximize"     );
   params.fpsLimit      = option_get_int   ("win", "fpsLimit"     );
   params.showFPS       = option_get_bool  ("win", "showFPS"      );
