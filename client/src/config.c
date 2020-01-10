@@ -154,9 +154,9 @@ static struct Option options[] =
   {
     .module         = "win",
     .name           = "r180",
-    .description    = "Rotate the display 180 degrees",
+    .description    = "Rotate the displayed image 180 degrees",
     .type           = OPTION_TYPE_BOOL,
-    .value.x_bool   = true,
+    .value.x_bool   = false,
   },
   {
     .module         = "win",
