@@ -84,7 +84,7 @@ struct AppParams
   bool         maximize;
   bool         minimizeOnFocusLoss;
   bool         center;
-  bool         vflip;
+  bool         r180;
   int          x, y;
   unsigned int w, h;
   const char * shmFile;
