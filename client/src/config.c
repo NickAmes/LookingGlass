@@ -153,6 +153,14 @@ static struct Option options[] =
   },
   {
     .module         = "win",
+    .name           = "vflip",
+    .description    = "Flip the display vertically",
+    .shortopt       = 'V',
+    .type           = OPTION_TYPE_BOOL,
+    .value.x_bool   = false,
+  },
+  {
+    .module         = "win",
     .name           = "borderless",
     .description    = "Borderless mode",
     .shortopt       = 'd',
@@ -391,6 +399,7 @@ bool config_load(int argc, char * argv[])
   params.keepAspect    = option_get_bool  ("win", "keepAspect"   );
   params.borderless    = option_get_bool  ("win", "borderless"   );
   params.fullscreen    = option_get_bool  ("win", "fullScreen"   );
+  params.vflip         = option_get_bool  ("win", "vflip"        );
   params.maximize      = option_get_bool  ("win", "maximize"     );
   params.fpsLimit      = option_get_int   ("win", "fpsLimit"     );
   params.showFPS       = option_get_bool  ("win", "showFPS"      );
