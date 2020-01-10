@@ -155,7 +155,6 @@ static struct Option options[] =
     .module         = "win",
     .name           = "r180",
     .description    = "Rotate the display 180 degrees",
-    .shortopt       = 'R',
     .type           = OPTION_TYPE_BOOL,
     .value.x_bool   = true,
   },
